@@ -1,0 +1,82 @@
+//div[@class='featured-box']
+
+element
+attribute
+text
+namespace
+processing-instruction
+comment
+document nodes.
+
+TSTNG
+-----------------
+@BeforeSuite
+@BeforeTest
+@Before Class
+
+@BeforeMethod
+@Test
+@AfterMethod
+
+@BeforeMethod
+@Test
+@aftermethod
+
+@beforemethod
+@test
+@aftertest
+
+
+@afterclass
+@after test
+@aftersuite
+
+
+DependsOnMethod  = {"Open"}
+
+Test Suite structure
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyFirstSuite" parallel="tests" >
+    <test thread-count="2" name="Test"  >
+        <classes>
+            <class name="examples.parametersdemo">
+                <parameter name="username" value="admin"/>
+                <parameter name="password" value="password"/>
+            </class>
+            <class name="examples.assertionexample">
+                <methods>
+                    <include name="testCase"/>
+                </methods>
+            </class>
+        </classes>
+    </test> <!-- Test -->
+    <test thread-count="2" name="second-test">
+        <classes>
+            <class name="examples.priorityDemo">
+                <methods>
+                    <include name="Two"/>
+                    <include name="Four"/>
+                </methods>
+            </class>
+            <class name="examples.testNGDemo">
+                <methods>
+            
+from Lohitha Mallireddy (internal) (internal) to everyone:    11:40 AM
+<include name="sampleTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite> <!-- Suite -->
+
+-------------------------------------------------------------------------------
+
+<include name="sampleTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite> <!-- Suite -->
